@@ -24,6 +24,13 @@ img {
   }
 }
 
+@media (max-width: 567px) {
+  .container {
+    max-width: 320px;
+    width: 85%;
+  }
+}
+
 .button {
   padding: 18px 30px;
   border-radius: 10px;
