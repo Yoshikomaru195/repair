@@ -93,6 +93,10 @@ img {
   outline: none;
 }
 
+.input:focus-within {
+  border: 1px solid #ffd200;
+}
+
 .navbar {
   padding: 8px 0;
 }
