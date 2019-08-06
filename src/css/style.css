@@ -97,6 +97,27 @@ img {
   border: 1px solid #ffd200;
 }
 
+#top {
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+  display: none;
+  padding: 10px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  border-radius: 10px;
+  opacity: 0.5;
+  background-color: #ffd200;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+#top:hover {
+  opacity: 1;
+}
+
 .navbar {
   padding: 8px 0;
 }
