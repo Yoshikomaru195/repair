@@ -34,6 +34,7 @@ img
   padding: 90px 0
   &-title
     font-size: 24px
+    text-align: center
     +bold
   &-subtitle
     display: block
@@ -46,6 +47,10 @@ img
   outline: none
   &:focus-within
     border: 1px solid $main-color
+.arrows
+  &__left, &__right
+    &:hover
+      cursor: pointer
 #top
   bottom: 25px
   right: 25px
