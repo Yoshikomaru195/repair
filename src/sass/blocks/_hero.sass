@@ -8,6 +8,8 @@
     flex-basis: 50%
     &__title
       margin-bottom: 40px
+      max-width: 500px
+      max-height: 500px
       font-size: 41px
       line-height: 55px
       +bold
@@ -69,3 +71,12 @@
         font-size: 12px
       &__image
         margin-right: 15px
+@media (max-width: 567px)
+  .hero
+    padding-top: 46px
+    &-text
+      &__title
+        margin-top: 0
+        margin-bottom: 13px
+        font-size: 22px
+      &__subtitle
