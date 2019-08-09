@@ -513,6 +513,9 @@ img {
 
 .portfolio__title {
   margin: auto;
+  max-width: 800px;
+  font-size: 30px;
+  line-height: 45px;
   margin-bottom: 100px;
 }
 
@@ -555,10 +558,14 @@ img {
 
 .price__title {
   margin: auto;
-  margin-bottom: 58px;
+  font-size: 30px;
+  max-width: 515px;
+  line-height: 45px;
+  margin-bottom: 50px;
 }
 
 .price__subtitle {
+  font-size: 20px;
   margin-bottom: 59px;
 }
 
