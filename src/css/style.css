@@ -44,6 +44,10 @@ img {
     max-width: 580px;
     width: 90%;
   }
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 @media (max-width: 567px) {
@@ -556,6 +560,10 @@ img {
   margin: auto;
 }
 
+.price {
+  padding-top: 100px;
+}
+
 .price__title {
   margin: auto;
   font-size: 30px;
@@ -688,6 +696,216 @@ img {
   }
   .card__text {
     padding: 30px;
+  }
+}
+
+.brif {
+  padding-top: 100px;
+  background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
+  background-position: left center, center right;
+  background-size: 50%, contain;
+  background-repeat: repeat-y, no-repeat;
+}
+
+.brif-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.brif__interview {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.brif__form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 200px;
+  text-align: center;
+}
+
+.brif__input {
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 15px;
+}
+
+.brif__button {
+  height: 65px;
+  width: 100%;
+  max-width: 370px;
+  margin-top: 15px;
+  margin-bottom: 33px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.interview {
+  padding-right: 70px;
+}
+
+.interview__title {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 22px;
+  line-height: 33px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.interview__subtitle {
+  display: block;
+  margin-bottom: 80px;
+  font-size: 16px;
+  line-height: 45px;
+}
+
+.interview-list {
+  padding: 0;
+  list-style: none;
+}
+
+.interview-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.interview-list__counter {
+  display: inline-block;
+  text-align: center;
+  margin-right: 30px;
+  font-size: 14px;
+  line-height: 35px;
+  width: 35px;
+  height: 35px;
+  min-width: 35px;
+  border-radius: 50%;
+  border: 2px solid #333333;
+}
+
+.interview-list__text {
+  max-width: 400px;
+  font-size: 18px;
+}
+
+.form__title {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.form__subtitle {
+  display: block;
+  margin-bottom: 49px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+@media (max-width: 1200px) {
+  .brif-block {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .brif__form {
+    padding-left: 30px;
+  }
+  .interview {
+    padding-right: 30px;
+  }
+  .interview__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .interview__subtitle {
+    margin-bottom: 30px;
+  }
+  .interview-list__text {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  .interview-list__counter {
+    margin-right: 20px;
+  }
+  .form__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .form__subtitle {
+    margin-bottom: 30px;
+  }
+  .form__description {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .brif {
+    background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
+    background-position: top center, center bottom;
+    background-size: 100% 50%, cover;
+    background-repeat: repeat-x, no-repeat;
+  }
+  .brif-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brif__form {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 567px) {
+  .brif {
+    padding-top: 46px;
+    padding-bottom: 34px;
+  }
+  .brif-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .brif__form {
+    padding-left: 0;
+  }
+  .interview {
+    padding-right: 0;
+  }
+  .interview__title {
+    line-height: normal;
+    font-size: 18px;
+  }
+  .interview__subtitle {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: normal;
+    width: 100%;
+  }
+  .interview-list:last-child {
+    margin-bottom: 40px;
+  }
+  .form__title {
+    font-size: 18px;
+    line-height: 25.35px;
+  }
+  .form__subtitle {
+    font-size: 14px;
+    line-height: 26.88px;
   }
 }
 /*# sourceMappingURL=style.css.map */
