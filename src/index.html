@@ -95,7 +95,7 @@
           <!-- /.section-subtitle -->
           <form action="#" id="offer-form" class="form offer__form">
             <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
-            <input type="tel" name="userphone" class="input offer__input" placeholder="Ваш телефон">
+            <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
             <button class="button offer__button">Получить бесплатный дизайн-проект</button>
           </form>
           <!-- /.form offer__form -->
@@ -259,9 +259,10 @@
             <h3 class="form__title">Оставьте заявку на бесплатный
               расчет ремонта по телефону</h3>
             <span class="form__subtitle">Для этого заполните форму ниже</span>
-            <form action="#">
-              <input type="text" class="input brif__input" placeholder="Ваше имя">
-              <input type="text" class="input brif__input" placeholder="Ваш телефон">
+            <form action="#" id="brif-form">
+              <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
+              <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
+              <input type="email" name="email" class="input brif__input" placeholder="Ваш email">
               <button class="button brif__button">Рассчитать стоимость</button>
               <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
             </form>
@@ -290,11 +291,59 @@
   <script src="js/scripts.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script>
     // Инициализация WOW
     new WOW().init();
     // Скрипт слайдера
     $(document).ready(function () {
+      // Валидация формы
+      // offer форма
+      $('#offer-form').validate({
+        rules: {
+          username: {
+            required: true,
+            minlength: 2,
+            maxlength: 15
+          },
+          phone: {
+            required: true
+          }
+        },
+        messages: {
+          username: "Укажите имя",
+          phone: {
+            required: "Укажите ваш телефон"
+          }
+        }
+      });
+      // brif форма
+      $('#brif-form').validate({
+        rules: {
+          username: {
+            required: true,
+            minlength: 2,
+            maxlength: 15
+          },
+          phone: {
+            required: true
+          },
+          email: {
+            required: true
+          }
+        },
+        messages: {
+          username: "Укажите имя",
+          phone: {
+            required: "Укажите ваш телефон"
+          },
+          email: "Введите корректный email"
+        }
+      });
+      // Маска для телефона
+      $('.phone').mask('8 (999) 999-99-99')
+      // Скрипт слайдера
       $('.slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
