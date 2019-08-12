@@ -1,0 +1,81 @@
+.steps
+  padding-top: 30px
+  &__title
+    margin: auto
+    margin-bottom: 40px
+    max-width: 670px
+    font-size: 30px
+    line-height: 45px
+    text-align: center
+  &__subtitle
+    width: 100%
+    margin-bottom: 58px
+    font-size: 20px
+    line-height: 45px
+  &-block
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    text-align: center
+    &__image
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: auto
+      width: 100px
+      height: 100px
+      margin-bottom: 30px
+      border: 3px solid $main-color
+      border-radius: 50%
+    &__text
+      font-size: 14px
+      line-height: 20px
+    &__item
+      flex-basis: 15%
+    &__arrows
+      margin-top: -10px
+@media (max-width: 1200px)
+  .steps
+    &__subtitle
+      width: 100%
+      margin-bottom: 10px
+      font-size: 20px
+      line-height: 45px
+    &-block
+      justify-content: center
+      &__item
+        margin-top: 40px
+        flex-basis: 32%
+      &__arrows
+        display: none
+@media (max-width: 768px)
+  .steps
+    padding-top: 40px
+@media (max-width: 567px)
+  .steps
+    padding-top: 0px
+    padding-bottom: 59px
+    &-block
+      &__text
+        margin-bottom: 20px
+        font-size: 12px
+        line-height: 16px
+    &__title
+      margin: auto
+      margin-bottom: 12px
+      max-width: 670px
+      font-size: 18px
+      line-height: normal
+      text-align: center
+    &__subtitle
+      font-size: 14px
+      line-height: 45px
+    &-block
+      flex-direction: column
+      justify-content: center
+      &__item
+        margin: auto
+        margin-top: 10px
+        max-width: 145px
+      &__image
+        margin-bottom: 18px
