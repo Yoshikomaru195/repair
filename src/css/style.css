@@ -347,6 +347,7 @@ template {
   src: local("MuseoSansCyrl-300"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
@@ -355,6 +356,7 @@ template {
   src: local("../fonts/MuseoSansCyrl/MuseoSansCyrl-700"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
 }
 
 * {
@@ -395,6 +397,10 @@ strong {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  .animated {
+    -webkit-animation: none !important;
+    animation: none !important;
   }
 }
 
