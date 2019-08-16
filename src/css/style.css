@@ -1534,6 +1534,7 @@ strong {
   .price__title {
     margin-bottom: 27px;
     font-size: 18px;
+    line-height: normal;
   }
   .price__subtitle {
     font-size: 14px;
