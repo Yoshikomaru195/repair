@@ -15,7 +15,7 @@
   &-block
     display: flex
     flex-wrap: wrap
-    justify-content: space-around
+    justify-content: center
     text-align: center
     &__image
       display: flex
@@ -31,7 +31,7 @@
       font-size: 14px
       line-height: 20px
     &__item
-      flex-basis: 15%
+      flex-basis: 14%
     &__arrows
       margin-top: -10px
 @media (max-width: 1200px)
@@ -55,14 +55,9 @@
   .steps
     padding-top: 0px
     padding-bottom: 59px
-    &-block
-      &__text
-        margin-bottom: 20px
-        font-size: 12px
-        line-height: 16px
     &__title
       margin: auto
-      margin-bottom: 12px
+      margin-bottom: 22px
       max-width: 670px
       font-size: 18px
       line-height: normal
@@ -70,6 +65,8 @@
     &__subtitle
       font-size: 14px
       line-height: 45px
+      margin-bottom: 25px
+      line-height: normal
     &-block
       flex-direction: column
       justify-content: center
@@ -77,5 +74,12 @@
         margin: auto
         margin-top: 10px
         max-width: 145px
+        flex-basis: 100%
       &__image
-        margin-bottom: 18px
+        margin-bottom: 23px
+      &__text
+        max-width: 130px
+        font-size: 12px
+        font-weight: 400
+        line-height: 16px
+        margin-bottom: 20px

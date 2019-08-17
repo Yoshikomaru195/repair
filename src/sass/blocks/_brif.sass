@@ -10,24 +10,25 @@
     flex-basis: 50%
   &__form
     flex-basis: 50%
-    padding-left: 200px
+    padding-left: 215px
     text-align: center
   &__input
     width: 100%
     max-width: 370px
     margin-bottom: 15px
   &__button
-    height: 65px
+    height: 70px
     width: 100%
     max-width: 370px
     margin-top: 15px
-    margin-bottom: 33px
+    margin-bottom: 25px
     font-size: 16px
     line-height: 18px
     +bold
 .interview
-  padding-right: 70px
+  padding-right: 64px
   &__title
+    max-width: 520px
     margin-top: 0
     margin-bottom: 32px
     font-size: 22px
@@ -43,13 +44,16 @@
     list-style: none
     &__item
       display: flex 
-      align-items: center
+      align-content: space-between
       margin-bottom: 25px
       +bold
+      &:last-child
+        margin-top: 40px
+        margin-bottom: 0
     &__counter
       display: inline-block
       text-align: center
-      margin-right: 30px
+      margin-right: 33px
       font-size: 14px
       line-height: 35px 
       width: 35px
@@ -59,6 +63,7 @@
       border: 2px solid $text-color
     &__text
       max-width: 400px
+      margin-top: 7px
       font-size: 18px
 .form
   &__title
@@ -66,12 +71,17 @@
     margin-bottom: 32px
     font-size: 22px
     line-height: 33px
+    +bold
   &__subtitle
     display: block
-    margin-bottom: 49px
+    margin-bottom: 45px
     font-size: 16px
     font-weight: 400
     line-height: 35px
+  &__description
+    font-size: 15px
+    font-weight: 400
+    line-height: 24px
 @media (max-width: 1200px)
   .brif
     background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
@@ -116,15 +126,29 @@
       margin-top: 80px
 @media (max-width: 567px)
   .brif
-    padding-top: 46px
+    padding-top: 44px
     padding-bottom: 34px
+    background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
+    background-position: top center, center bottom
+    background-size: 100% 47%, cover
+    background-repeat: repeat-x, no-repeat
+    &__button
+      margin-top: 0
+      font-size: 14px
+      line-height: 18px
     &-block
       justify-content: center
     &__form
       padding-left: 0
+    &__input
+      margin-bottom: 8px
+      &:last-child
+        margin-bottom: 10px
   .interview
     padding-right: 0
     &__title
+      margin-bottom: 12px
+      max-width: 220px
       line-height: normal
       font-size: 18px
     &__subtitle
@@ -132,14 +156,27 @@
       margin-bottom: 40px
       font-size: 14px 
       line-height: normal
-      width: 100%
+      max-width: 180px
     &-list
-      &:last-child
-        margin-bottom: 40px
+      &__item
+        align-items: center
+        &:last-child
+          margin-top: 0
+      &__counter
+        margin: 0
+        margin-right: 8px
+      &__text
+        margin: 0
   .form
     &__title
+      max-width: 300px
+      margin-top: 15px
       font-size: 18px
       line-height: 25.35px
+      letter-spacing: -1px
     &__subtitle
       font-size: 14px
       line-height: 26.88px
+    &__description
+      margin: auto
+      max-width: 150px

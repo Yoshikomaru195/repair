@@ -407,7 +407,7 @@ strong {
 @media (max-width: 567px) {
   .container {
     max-width: 320px;
-    width: 85%;
+    width: 86%;
   }
 }
 
@@ -447,7 +447,7 @@ strong {
 }
 
 .input {
-  padding: 20px 26px;
+  padding: 24px 26px;
   font-size: 15px;
   border-radius: 10px;
   border: 1px solid #dddddd;
@@ -1174,14 +1174,28 @@ strong {
   .hero {
     padding-top: 46px;
   }
+  .hero-text {
+    padding: 0;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
   .hero-text__title {
+    max-width: 280px;
     margin-top: 0;
-    margin-bottom: 13px;
-    font-size: 22px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: normal;
+  }
+  .hero-list__text {
+    line-height: normal;
+  }
+  .hero-list__image {
+    margin-right: 16px;
   }
 }
 
 .offer {
+  padding-top: 80px;
   background: url("../img/offer/offer-bg.png") no-repeat;
   background-position: center right;
   background-size: contain;
@@ -1205,7 +1219,8 @@ strong {
 }
 
 .offer__title {
-  margin-bottom: 24px;
+  margin-top: 0;
+  margin-bottom: 18px;
   max-width: 360px;
   line-height: 35px;
   text-align: left;
@@ -1229,7 +1244,7 @@ strong {
 .offer__button {
   width: 100%;
   min-height: 70px;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   font-size: 16px;
   line-height: 18px;
 }
@@ -1317,7 +1332,7 @@ strong {
   .offer__button {
     padding: 20px 60px;
     font-size: 14px;
-    margin-bottom: 27px;
+    margin-bottom: 20px;
   }
   .offer-info__block:first-child {
     margin-left: 6px;
@@ -1358,9 +1373,19 @@ strong {
   position: absolute;
   top: 0;
   right: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: #ffd200;
+}
+
+.modal-dialog__close:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
 }
 
 .portfolio {
+  padding-bottom: 100px;
   background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
   background-size: 50%;
 }
@@ -1370,7 +1395,7 @@ strong {
   max-width: 800px;
   font-size: 30px;
   line-height: 45px;
-  margin-bottom: 100px;
+  margin-bottom: 95px;
 }
 
 .portfolio__arrows {
@@ -1393,7 +1418,8 @@ strong {
 
 @media (max-width: 567px) {
   .portfolio {
-    padding: 43px 0;
+    padding-top: 43px;
+    padding-bottom: 64px;
   }
   .portfolio__title {
     margin-bottom: 40px;
@@ -1409,12 +1435,22 @@ strong {
   margin: auto;
 }
 
+.slider__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider__item {
+  margin: 0 15px;
+}
+
 .price {
-  padding-top: 100px;
+  padding-top: 85px;
 }
 
 .price__title {
   margin: auto;
+  margin-top: 0;
   font-size: 30px;
   max-width: 515px;
   line-height: 45px;
@@ -1451,11 +1487,12 @@ strong {
 }
 
 .card__text {
-  padding: 40px;
+  padding: 35px 40px 40px 40px;
 }
 
 .card__title {
   margin-top: 0;
+  margin-bottom: 32px;
   font-size: 18px;
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
@@ -1528,11 +1565,12 @@ strong {
 
 @media (max-width: 567px) {
   .price {
-    padding-top: 52px;
+    padding-top: 48px;
     padding-bottom: 20px;
   }
   .price__title {
-    margin-bottom: 27px;
+    margin-top: 0;
+    margin-bottom: 25px;
     font-size: 18px;
     line-height: normal;
   }
@@ -1571,7 +1609,7 @@ strong {
 .brif__form {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-left: 200px;
+  padding-left: 215px;
   text-align: center;
 }
 
@@ -1582,11 +1620,11 @@ strong {
 }
 
 .brif__button {
-  height: 65px;
+  height: 70px;
   width: 100%;
   max-width: 370px;
   margin-top: 15px;
-  margin-bottom: 33px;
+  margin-bottom: 25px;
   font-size: 16px;
   line-height: 18px;
   font-family: 'Museo Sans Bold', sans-serif;
@@ -1594,10 +1632,11 @@ strong {
 }
 
 .interview {
-  padding-right: 70px;
+  padding-right: 64px;
 }
 
 .interview__title {
+  max-width: 520px;
   margin-top: 0;
   margin-bottom: 32px;
   font-size: 22px;
@@ -1622,18 +1661,22 @@ strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   margin-bottom: 25px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
+.interview-list__item:last-child {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
 .interview-list__counter {
   display: inline-block;
   text-align: center;
-  margin-right: 30px;
+  margin-right: 33px;
   font-size: 14px;
   line-height: 35px;
   width: 35px;
@@ -1645,6 +1688,7 @@ strong {
 
 .interview-list__text {
   max-width: 400px;
+  margin-top: 7px;
   font-size: 18px;
 }
 
@@ -1653,14 +1697,22 @@ strong {
   margin-bottom: 32px;
   font-size: 22px;
   line-height: 33px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .form__subtitle {
   display: block;
-  margin-bottom: 49px;
+  margin-bottom: 45px;
   font-size: 16px;
   font-weight: 400;
   line-height: 35px;
+}
+
+.form__description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 @media (max-width: 1200px) {
@@ -1728,8 +1780,17 @@ strong {
 
 @media (max-width: 567px) {
   .brif {
-    padding-top: 46px;
+    padding-top: 44px;
     padding-bottom: 34px;
+    background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
+    background-position: top center, center bottom;
+    background-size: 100% 47%, cover;
+    background-repeat: repeat-x, no-repeat;
+  }
+  .brif__button {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 18px;
   }
   .brif-block {
     -webkit-box-pack: center;
@@ -1739,10 +1800,18 @@ strong {
   .brif__form {
     padding-left: 0;
   }
+  .brif__input {
+    margin-bottom: 8px;
+  }
+  .brif__input:last-child {
+    margin-bottom: 10px;
+  }
   .interview {
     padding-right: 0;
   }
   .interview__title {
+    margin-bottom: 12px;
+    max-width: 220px;
     line-height: normal;
     font-size: 18px;
   }
@@ -1751,18 +1820,37 @@ strong {
     margin-bottom: 40px;
     font-size: 14px;
     line-height: normal;
-    width: 100%;
+    max-width: 180px;
   }
-  .interview-list:last-child {
-    margin-bottom: 40px;
+  .interview-list__item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .interview-list__item:last-child {
+    margin-top: 0;
+  }
+  .interview-list__counter {
+    margin: 0;
+    margin-right: 8px;
+  }
+  .interview-list__text {
+    margin: 0;
   }
   .form__title {
+    max-width: 300px;
+    margin-top: 15px;
     font-size: 18px;
     line-height: 25.35px;
+    letter-spacing: -1px;
   }
   .form__subtitle {
     font-size: 14px;
     line-height: 26.88px;
+  }
+  .form__description {
+    margin: auto;
+    max-width: 150px;
   }
 }
 
@@ -1792,8 +1880,9 @@ strong {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 
@@ -1821,8 +1910,8 @@ strong {
 }
 
 .steps-block__item {
-  -ms-flex-preferred-size: 15%;
-      flex-basis: 15%;
+  -ms-flex-preferred-size: 14%;
+      flex-basis: 14%;
 }
 
 .steps-block__arrows {
@@ -1862,14 +1951,9 @@ strong {
     padding-top: 0px;
     padding-bottom: 59px;
   }
-  .steps-block__text {
-    margin-bottom: 20px;
-    font-size: 12px;
-    line-height: 16px;
-  }
   .steps__title {
     margin: auto;
-    margin-bottom: 12px;
+    margin-bottom: 22px;
     max-width: 670px;
     font-size: 18px;
     line-height: normal;
@@ -1878,6 +1962,8 @@ strong {
   .steps__subtitle {
     font-size: 14px;
     line-height: 45px;
+    margin-bottom: 25px;
+    line-height: normal;
   }
   .steps-block {
     -webkit-box-orient: vertical;
@@ -1892,9 +1978,18 @@ strong {
     margin: auto;
     margin-top: 10px;
     max-width: 145px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .steps-block__image {
-    margin-bottom: 18px;
+    margin-bottom: 23px;
+  }
+  .steps-block__text {
+    max-width: 130px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 20px;
   }
 }
 
@@ -1927,12 +2022,13 @@ iframe {
 .contacts {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-top: 100px;
+  padding-top: 90px;
   padding-left: 215px;
 }
 
 .contacts__title {
   max-width: 300px;
+  margin-top: 0;
   margin-bottom: 90px;
   font-size: 22px;
   line-height: 1.5;
@@ -1957,14 +2053,15 @@ iframe {
 .contacts-list__text {
   font-size: 16px;
   line-height: 26px;
+  margin-left: -4px;
 }
 
 .contacts-list__icon {
   min-width: 20px;
   min-height: 20px;
-  margin-top: 5px;
-  margin-right: 23px;
-  text-align: center;
+  margin-top: 6px;
+  margin-right: 25px;
+  text-align: left;
   line-height: 20px;
 }
 
