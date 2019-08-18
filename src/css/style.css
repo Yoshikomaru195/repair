@@ -1041,6 +1041,7 @@ strong {
 @media (max-width: 567px) {
   .navbar__button {
     padding: 15px 26px;
+    margin-right: 5px;
     font-size: 10px;
     border-radius: 5px;
   }
