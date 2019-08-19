@@ -1213,7 +1213,7 @@ strong {
 }
 
 .offer {
-  padding-top: 80px;
+  padding-top: 76px;
   background: url("../img/offer/offer-bg.png") no-repeat;
   background-position: center right;
   background-size: contain;
@@ -1672,6 +1672,8 @@ strong {
 }
 
 .brif__button {
+  display: block;
+  margin: auto;
   height: 70px;
   width: 100%;
   max-width: 370px;
