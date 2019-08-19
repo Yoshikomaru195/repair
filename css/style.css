@@ -1302,6 +1302,12 @@ strong {
   font-weight: 700;
 }
 
+.inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (max-width: 1200px) {
   .offer {
     background: url("../img/offer/offer-bg.png") no-repeat;
