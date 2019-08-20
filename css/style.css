@@ -1230,6 +1230,15 @@ strong {
   background-color: #ffffff;
 }
 
+.offer-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .offer-block {
   width: 50%;
   padding-right: 90px;
@@ -1253,21 +1262,18 @@ strong {
 
 .offer__input {
   width: 240px;
-  margin-bottom: 28px;
-}
-
-.offer__input:first-child {
-  margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 .offer__input.error {
   display: block;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 .offer__button {
   width: 100%;
   min-height: 70px;
+  margin-top: 8px;
   margin-bottom: 26px;
   font-size: 16px;
   line-height: 18px;
@@ -1302,12 +1308,6 @@ strong {
   font-weight: 700;
 }
 
-.inputs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 @media (max-width: 1200px) {
   .offer {
     background: url("../img/offer/offer-bg.png") no-repeat;
@@ -1324,6 +1324,12 @@ strong {
     margin: auto;
     width: 70%;
     padding-right: 0;
+  }
+  .offer-inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .offer__input {
     width: 100%;

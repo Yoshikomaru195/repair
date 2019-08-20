@@ -12,6 +12,9 @@
     top: 0
     left: 0
     background-color: #ffffff
+  &-inputs
+    display: flex
+    justify-content: space-between
   &-block 
     width: 50%
     padding-right: 90px
@@ -29,15 +32,14 @@
     text-align: left
   &__input
     width: 240px
-    margin-bottom: 28px
-    &:first-child
-      margin-right: 10px
+    margin-bottom: 20px
     &.error
       display: block
-      margin-bottom: 0
+      margin-bottom: 5px
   &__button
     width: 100%
     min-height: 70px
+    margin-top: 8px
     margin-bottom: 26px
     font-size: 16px
     line-height: 18px
@@ -58,8 +60,6 @@
       text-decoration: none
       color: $text-color
       +bold
-.inputs
-  display: flex
 @media (max-width: 1200px)
   .offer
     background: url('../img/offer/offer-bg.png') no-repeat
@@ -74,6 +74,8 @@
       margin: auto
       width: 70%
       padding-right: 0
+    &-inputs
+      flex-direction: column
     &__input
       width: 100%
       margin-bottom: 10px
